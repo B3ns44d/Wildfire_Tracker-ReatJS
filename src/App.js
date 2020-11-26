@@ -1,7 +1,8 @@
-import { useState, useEffect } from 'react'
-import Map from './app/Map'
-import Loader from './app/Loader'
-
+import { useState, useEffect } from 'react';
+import Map from './app/Map';
+import Loader from './app/Loader';
+import Header from './app/Header';
+// import GoogleMap from './GoogleMap'
 
 function App() {
   const [eventData, setEventData] = useState([])
@@ -22,6 +23,9 @@ function App() {
 
   return (
     <div>
+      <Header/>
+
+      {/* <GoogleMap/> */}
       { !loading ? <Map eventData={eventData} /> : <Loader /> }
     </div>
   );
