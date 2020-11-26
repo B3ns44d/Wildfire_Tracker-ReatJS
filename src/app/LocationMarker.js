@@ -1,6 +1,6 @@
 import React from 'react'
 import { Icon } from "@iconify/react";
-import locationIcon from '@iconify/icons-mdi/fire-alert';
+import locationIcon from '@iconify/icons-mdi/campfire';
 
 function LocationMarker({ lat, lng, onClick }) {
     return (
